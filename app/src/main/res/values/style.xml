@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="inputLayoutStyle">
+        <item name="background">@color/black</item>
+
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintEnabled">false</item>
+
+    </style>
+
+    <style name="btnLogin">
+        <item name="background">@color/btn_login_color</item>
+        <item name="layout_constraintWidth_percent">0.88</item>
+        <item name="layout_constraintHeight_percent">0.08</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="cornerRadius">@dimen/_8sdp</item>
+    </style>
+
+    <style name="secondryTxtStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="userNameTxtStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+    </style>
+    <style name="profile_pic_style">
+        <item name="layout_constraintWidth_percent">0.12</item>
+        <item name="layout_constraintHeight_percent">0.12</item>
+        <item name="android:layout_margin">@dimen/_8sdp</item>
+    </style>
+
+    <style name="post">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+    </style>
+
+    <style name="reacts_style">
+        <item name="layout_constraintWidth_percent">0.12</item>
+        <item name="layout_constraintHeight_percent">0.12</item>
+        <item name="android:layout_margin">@dimen/_8sdp</item>
+    </style>
+
+
+    <style name="reacts_text">
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="layout_constraintWidth_percent">0.12</item>
+        <item name="layout_constraintHeight_percent">0.12</item>
+        <item name="android:layout_margin">@dimen/_8sdp</item>
+    </style>
+
+    <style name="header_text">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:background">@color/header_color</item>
+    </style>
+
+    <style name="main_img_view">
+        <item name="layout_constraintHeight_percent">0.25</item>
+        <item name="layout_constraintWidth_percent">0.90</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:scaleType">fitXY</item>
+
+    </style>
+
+    <style name="course_img_view">
+        <item name="layout_constraintHeight_percent">0.10</item>
+        <item name="layout_constraintWidth_percent">0.90</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:scaleType">fitXY</item>
+
+    </style>
+
+    <style name="btn_course" >
+        <item name="layout_constraintHeight_percent">0.06</item>
+        <item name="layout_constraintWidth_percent">0.95</item>
+        <item name="android:layout_marginTop">@dimen/_3sdp</item>
+        <item name="android:background">@color/btn_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="content_text">
+        <item name="android:textSize">@dimen/_14sdp</item>
+      <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">@dimen/_14sdp</item>
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PostsActivity">
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv_posts"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfilePic"
+            style="@style/profile_pic_style"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/yellow_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            style="@style/userNameTxtStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Unblast"
+            app:layout_constraintStart_toEndOf="@id/imgProfilePic"
+            app:layout_constraintTop_toTopOf="@id/imgProfilePic" />
+
+        <TextView
+            android:id="@+id/txtPostTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post_time"
+            app:layout_constraintStart_toStartOf="@id/txtUserName"
+            app:layout_constraintTop_toBottomOf="@id/txtUserName" />
+
+        <TextView
+            android:id="@+id/txtPost"
+            style="@style/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPostTime" />
+
+        <ImageView
+            android:id="@+id/imgPost"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/yellow_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPost" />
+
+        <ImageView
+            android:id="@+id/imgReacts"
+            style="@style/reacts_style"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/icon_like"
+            app:layout_constraintStart_toStartOf="@id/imgPost"
+            app:layout_constraintTop_toBottomOf="@id/imgPost" />
+
+        <TextView
+            android:id="@+id/txtReactsNumber"
+            style="@style/reacts_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            app:layout_constraintBottom_toBottomOf="@+id/imgReacts"
+            app:layout_constraintStart_toEndOf="@id/imgReacts"
+            app:layout_constraintTop_toTopOf="@+id/imgReacts" />
+
+        <ImageView
+            android:id="@+id/imgToogleBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/icon_toogle"
+            app:layout_constraintHeight_percent="0.17"
+            app:layout_constraintEnd_toEndOf="@+id/imgPost"
+            app:layout_constraintStart_toStartOf="@+id/imgPost"
+            app:layout_constraintTop_toBottomOf="@id/txtReactsNumber"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
